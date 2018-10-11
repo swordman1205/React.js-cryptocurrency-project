@@ -1,0 +1,29 @@
+.user-admin-watch-video {
+  .video-list {
+    .ant-list-item {
+      .ant-list-item-content {
+        width: 100%;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    .cover-view {
+      height: 100px;
+      background-color: rgba(0, 0, 0, .8);
+      position: relative;
+      .anticon {
+        color: white;
+        font-size: 40px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+      }
+    }
+  }
+}

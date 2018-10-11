@@ -1,0 +1,161 @@
+@import "../variables/colors";
+@import "../variables/dimensions";
+
+#app {
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  position: relative;
+  background: $bg-second;
+}
+
+.clearfix {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+.fl-r {
+  display: inline-block;
+  float: right;
+}
+
+.fl-l {
+  display: inline-block;
+  float: left;
+}
+
+.react-spinner {
+  animation: App-logo-spin infinite 4s linear;
+  height: 90px;
+  margin: 0 auto;
+  display: block;
+}
+
+.cut-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.pt-3 {
+  padding-top: 3rem;
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.ml-3{
+  margin-left:3rem;
+}
+
+.fs-3{
+  font-size:3rem;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/**FORM **/
+.form-field-label {
+  font-size: 2rem;
+}
+
+.ant-input {
+  font-size: 1.6rem;
+  padding: .6rem .6rem .6rem 3.5rem;
+}
+
+/**ANT STYLES**/
+.ant-layout {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100%;
+  background: transparent !important;
+}
+
+.ant-layout-header, .ant-layout-footer {
+  background: $bg-primary !important;
+  box-shadow: $block-box-shadow !important;
+}
+
+.ant-layout-has-sider {
+    .ant-layout-sider{
+       @media (max-width: $screen-xs) {
+        flex: 0 0 80px !important;  
+        max-width: 80px !important;  
+        min-width: 80px !important; 
+        width: 80px !important; 
+      }
+
+      @media (max-width: $screen-sm){
+        flex: 0 0 80px !important;  
+        max-width: 80px !important;  
+        min-width: 80px !important; 
+        width: 80px !important; 
+      }
+    }
+ 
+
+  .ant-layout-content {
+    padding: 4rem 0 4rem 1.5rem;
+    .content-wrapper {
+      background: $bg-primary;
+      box-shadow: $block-box-shadow;
+      padding: 2rem;
+      min-height: 100%;
+    }
+  }
+  .ant-layout-sider-trigger {
+    position: absolute !important;
+  }
+  .ant-layout-sider-collapsed {
+    overflow: hidden;
+  }
+}
+
+.ant-alert-close-icon {
+  top: 0 !important;
+  right: 4px !important;
+}

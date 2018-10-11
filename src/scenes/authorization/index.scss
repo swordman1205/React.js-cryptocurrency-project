@@ -1,0 +1,22 @@
+@import '../../styles/variables/colors';
+@import '../../styles/variables/dimensions';
+
+.auth-type-page {
+  width: 100%;
+  max-width: 80rem;
+  margin: 4rem auto;
+  background: $bg-primary;
+  box-shadow: $block-box-shadow;
+  border-radius: $block-border-radius;
+
+  .auth-form{
+    width: 100%;
+    padding: 0 1.5rem 5rem 1.5rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    .form-field-label{
+      font-size: 2rem;
+      padding-bottom: 3rem;
+    }
+  }
+}

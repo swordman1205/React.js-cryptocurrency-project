@@ -1,0 +1,49 @@
+.homepage {
+
+  .ant-carousel .slick-slide {
+    text-align: center;
+    //height: 340px !important;
+    //line-height: 340px !important;
+    background: #364d79;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .ant-carousel .slick-dots li.slick-active button {
+      background-color: #34C48B !important;
+  }
+
+  .ant-carousel .slick-slide h3 {
+    color: #000;
+  }
+  
+  .contents {
+    padding: 1rem;
+    border: 1px solid grey;
+    
+    .sections, .tutors {
+      background: #ffffff !important; 
+      margin: 1rem 0;
+    }
+
+    background-color: #f0ffff !important;
+
+    .gutter-box {
+       height: 100%;
+       border: 1px solid grey;
+       padding: 5px 0;
+       text-align: center;
+       background-color: #f0ffff !important;
+        h1 {
+          font-size:40px;
+          color:#7161AE !important;
+        }
+        h2 {
+          color:#7161AE !important;
+        }
+     }
+
+  }
+}

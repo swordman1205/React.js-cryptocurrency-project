@@ -1,0 +1,20 @@
+
+// primary colors
+$clr-primary: #fff !default;
+$clr-second: #000 !default;
+$clr-overlay: rgba($clr-second, 0.5) !default;
+$clr-main: #337ab7 !default;
+
+$bg-primary: #fff !default;
+$bg-second: #f3f6f8 !default;
+
+$text-dark: #3b3b3b !default;
+$text-middle: #586371 !default;
+$text-light: #79828d !default;
+
+$clr-scroll: #eee;
+$clr-separator: rgba(#ddd, 0.5);
+// states
+$clr-state-fail: #c74c4c;
+$clr-state-ok: green;
+

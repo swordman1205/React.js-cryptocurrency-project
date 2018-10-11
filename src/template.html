@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script> -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116920925-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-116920925-1');
+    </script>
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/5ac66731d7591465c7093ad2/default';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+        function onYouTubeIframeAPIReady() {
+            window.YTPlayer = YT.Player;
+            window.dispatchEvent(new CustomEvent('youtube_ready', { detail: YT.Player }));
+        }
+    </script>
+</head>
+
+<body>
+    <div id="app">Loading...</div>
+
+    <div id="alert-portal">
+        <div class="alert"></div>
+    </div>
+</body>
+</html>

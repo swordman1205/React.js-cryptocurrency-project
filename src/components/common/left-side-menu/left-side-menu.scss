@@ -1,0 +1,44 @@
+$break-small: 768px;
+
+.left-side-menu {
+	button {
+		span {
+			@media screen and (max-width: $break-small) {
+	    	font-size: 0;
+			}
+		}
+	}
+
+  .ant-menu-item a {
+    font-size: 1.4rem;
+    img {
+      width: 25px;
+      margin: 2px;
+      margin-right: 10px;
+    }
+
+    @media screen and (max-width: $break-small) {
+	    font-size: 0;
+	    width: 30px;
+	  }
+  }
+
+  .ant-menu-submenu-title {
+    .ant-menu-submenu-arrow {
+      @media screen and (max-width: $break-small) {
+        margin-top: 6px;
+        margin-right: -10px;
+      }
+    }
+    a {
+      img {
+        width: 25px;
+        margin: 2px;
+        margin-right: 10px;
+      }
+      @media screen and (max-width: $break-small) {
+        font-size: 0;
+      }
+    }
+  }
+}

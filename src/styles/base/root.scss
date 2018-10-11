@@ -1,0 +1,78 @@
+@import "../variables/colors";
+@import "../variables/dimensions";
+
+$font-size-root: 10px !default;
+$font-size-lg: 9px !default;
+$font-size-md: 8.5px !default;
+$font-size-sm: 8px !default;
+$font-size-xs: 8px !default;
+
+
+html {
+  font-size: $font-size-root;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+  min-width: 320px;
+  div {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  height: 100vh;
+  font-weight: 400;
+  background: $bg-primary;
+  &::-webkit-scrollbar {
+    width: .8rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: $clr-scroll;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  padding-top: $padding-top-h1;
+  padding-bottom: $padding-bottom-h1;
+  text-align: center;
+  color: $text-dark;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-top: $padding-top-h2;
+  padding-bottom: $padding-top-h2;
+  color: $text-dark;
+}
+
+
+h3 {
+  font-size: 1.8rem;
+  color: $text-dark;
+}
+
+
+@media(max-width: $screen-lg){
+  html {
+    font-size: $font-size-lg !important;
+  }
+}
+
+@media (max-width: $screen-md){
+  html {
+    font-size: $font-size-md !important;
+  }
+}
+
+@media (max-width: $screen-sm){
+  html {
+    font-size: $font-size-sm !important;
+  }
+}
+
+@media (max-width: $screen-xs) {
+  html {
+    font-size: $font-size-xs !important;
+  }
+}

@@ -1,0 +1,32 @@
+$screen-xs-max: 767px;
+
+.page-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  .ant-layout-footer {
+    background: #7161AE !important; 
+  }
+  .footer-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      margin: 0 10px;
+      font-size:16px;
+      color: #ffffff !important; 
+      &:hover{
+        color: #34C48B !important; 
+      }
+    }
+    @media screen and (max-width: $screen-xs-max) {
+      flex-direction: column;
+      a {
+        margin: 5px 0;
+      }
+    }
+  }
+}
